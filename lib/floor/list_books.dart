@@ -30,7 +30,7 @@ class _ListBooksWidgetState extends State<ListBooksWidget> {
       .build();
     
     dao = database.bookDAO;
-    _getAllBooks();
+    await _getAllBooks();
   }
 
   _getAllBooks() async{
@@ -69,7 +69,7 @@ class _ListBooksWidgetState extends State<ListBooksWidget> {
                 leading: item.id.toString(),
                 title: item.title,
                 subtitle: item.author,
-                longPress: _onDeleteBook());
+                longPress: _onDeleteBook);
           },
           separatorBuilder: (context, index) => Container(),
           itemCount: books.length),

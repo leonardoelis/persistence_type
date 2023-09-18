@@ -1,6 +1,6 @@
 import 'package:floor/floor.dart';
 
-import '../models/book.dart';
+import 'package:persistence_type/floor/models/book.dart';
 
 @dao
 abstract class BookDAO{

@@ -18,13 +18,13 @@ class FormBookWidget extends StatelessWidget {
         body: Form(
             key: _formKey,
             child: Padding(
-              padding: EdgeInsets.all(12),
+              padding: const EdgeInsets.all(12),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   TextFormField(
                     decoration:
-                        InputDecoration(hintText: "Nome", labelText: "Nome"),
+                        const InputDecoration(hintText: "Nome", labelText: "Nome"),
                     controller: _nameController,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
@@ -45,7 +45,7 @@ class FormBookWidget extends StatelessWidget {
                     },
                   ),
                   Padding(
-                    padding: EdgeInsets.only(top: 8),
+                    padding: const EdgeInsets.only(top: 8),
                     child: ElevatedButton(
                       child: const Text("Salvar"),
                       onPressed: () {
